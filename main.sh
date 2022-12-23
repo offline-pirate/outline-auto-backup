@@ -2,7 +2,7 @@
 # this file will run just once to setup the auto backup
 
 echo 'create direcory for outline'
-mkdir /home/outline/backups
+mkdir /home/outline/backups -p
 
 echo 'add backuper to cron.daily'
 /usr/bin/ln -s `pwd`/outline-backuper.sh /etc/cron.daily
