@@ -3,7 +3,8 @@
 now=`/usr/bin/date +"%s"`
 
 # to keep data for one week we multiply 86400 with 7 
-seconds_to_keep_data=$((86400*7))
+days_to_keep=7
+seconds_to_keep_data=$((86400*$days_to_keep))
 seconds_goes=$(($seconds_to_keep_data - $now))
 
 for file_name in *.gz
