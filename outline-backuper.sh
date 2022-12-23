@@ -14,3 +14,4 @@ then
 	echo 'backup done :)'
 else
 	echo 'err: backup dident make it :('
+fi
